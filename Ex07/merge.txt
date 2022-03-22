@@ -1,0 +1,2 @@
+3-way-merge : 형상이 다를 때
+fast-forward-merge : 형상이 같을 때
