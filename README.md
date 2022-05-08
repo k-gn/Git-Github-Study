@@ -55,14 +55,12 @@
         - 돌아가려는 커밋으로 되돌아가고, HEAD가 돌아가려는 커밋을 새롭게 가리키게 된다.
         - staging area와 working directory는 아무런 변화도 없다.
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ce6afc68-dc89-4210-bf37-bea167362d36/Untitled.png)
         
     - **mixed (**default): commit된 파일들을 working directory로 돌려놓음. (add 하기 전 상태로)
         - Index를 HEAD가 가리키는 상태로 만든다.
         - 돌아가려는 커밋으로 되돌아가고, HEAD가 돌아가려는 커밋을 새롭게 가리키게 된다.
         - staging area는 돌아가려는 커밋과 동일해지고, working directory는 아무 변화가 없다.
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/acbc95b1-dde5-44d3-a60e-34384297c080/Untitled.png)
         
     - **hard** : commit된 파일들 중 tracked 파일들을 working directory에서 삭제
         - 1. 워킹 디렉토리를 Index의 상태로 만든다.
@@ -71,7 +69,6 @@
         - 이미 push한 commit을 취소할 경우에는 강제로 push해주어야 한다.
             - git push -f 또는 git push origin +master
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7c5b7921-2739-4f3f-bf70-738e579f0ef4/Untitled.png)
         
     - **HEAD~취소할 커밋수** : 현재로부터 원하는 만큼의 커밋이 취소된다.
     - **HEAD^** : 가장 최근의 커밋이 취소된다.
@@ -99,13 +96,11 @@
     - 시간축에 따라 병합 커밋들이 사이사이에 들어간다.
     - 한번에 눈에 들어오지 않음
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93a47628-abff-48c3-92df-1f475b6bf650/Untitled.png)
     
 - **git merge —squash [병합할 브랜치명] :** 현재 브랜치에 대상 브랜치를 병합
     - 하나의 새로운 커밋이 생성됨 → git commit -m “message” 진행
     - **—squash :** 모든 커밋을 하나의 커밋으로 병합
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d12ef760-3431-4780-9fe7-825672011609/Untitled.png)
     
 
 ---
